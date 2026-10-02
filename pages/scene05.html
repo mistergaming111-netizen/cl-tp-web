@@ -13,3 +13,34 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 <body class="in-pages">
+
+    <main class="game-container">
+    <header class="scene-header">
+     
+      <div class="scene-illustration">
+        <img src="../assets/icons/probleme.webp" alt="Alerte Sécurité" class="header-img">
+      </div>
+
+      <h1 class="title" style="color: var(--accent-color);"><i class="fa-solid fa-shield-cat"></i> HONEYPOT DETECTED</h1>
+      <p class="subtitle">[SECURITY ALARM TRIGGERED]</p>
+    </header>
+
+    <section class="scene-body" style="border-left-color: var(--accent-color);">
+      <p class="description">
+        Vos requêtes répétées ont déclenché une règle de détection automatique (IDS/IPS). Le service auquel vous tentiez d'accéder était un <strong>honeypot</strong> destiné à capturer vos tentatives.
+      </p>
+      <p class="description">
+        Les équipes du SOC ont immédiatement isolé votre session et initié un traçage de votre adresse IP.
+      </p>
+    </section>
+
+   
+    <nav class="choices-container">
+      <a href="scene09.html" class="btn-choice">
+        <i class="fa-solid fa-skull icon" style="color: var(--accent-color);"></i> Analyser les conséquences (Game Over)
+      </a>
+    </nav>
+  </main>
+
+</body>
+</html>

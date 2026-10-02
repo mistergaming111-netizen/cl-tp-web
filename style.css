@@ -77,10 +77,28 @@ body {
   background: var(--panel-bg);
   border: 1px solid rgba(0, 255, 102, 0.3);
   border-radius: 10px;
-  padding: 2rem;
+  padding: 1.5rem;
   box-shadow: 0 0 25px rgba(0, 255, 102, 0.15);
   backdrop-filter: blur(8px);
   text-align: center;
+}
+
+@media (max-width: 600px) {
+    .title {
+      font-size: 1.5rem;
+    }
+  .btn-choice {
+    font-size: 0.8rem;
+    padding: 0.75rem 1rem;
+    white-space: normal;
+    word-break: break-word;
+  }
+  .header-img {
+    max-width: 90px;
+  }
+  .audio-player {
+    max-width: 100%;
+  }
 }
 
 .title {

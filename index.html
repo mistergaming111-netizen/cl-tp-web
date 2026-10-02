@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'Ombre du Donjon - Accueil</title>
+
+  <!-- Font Awesome pour les icônes des boutons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- stylesheet principale -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-home">
+
+  
+ <!-- Balise audio 100% HTML (sans JavaScript) -->
+<div class="audio-player">
+  <p><i class="fa-solid fa-music"></i> Ambiance sonore :</p>
+  <audio controls loop preload="auto">
+    <source src="assets/sounds/night-ambiance.mp3" type="audio/mpeg">
+    Votre navigateur ne supporte pas l'élément audio.
+  </audio>
+</div>
+
+  <main class="game-container">
+    <header class="scene-header">
+      <h1 class="title"><i class="fa-solid fa-dungeon"></i> L'Ombre du Donjon</h1>
+      <p class="subtitle">Un jeu d'aventure dont vous êtes le héros</p>
+    </header>
+
+    <section class="scene-body">
+      <p class="description">
+        Une brume épaisse recouvre la vallée. Face à vous se dresse l'entrée sombre et menaçante d'une citadelle oubliée. Les légendes racontent qu'un trésor inestimable y est enfoui... tout comme les ossements des aventuriers qui ont osé s'y aventurer.
+      </p>
+      <p class="description">
+        Prenez vos décisions avec prudence : chaque choix vous mènera vers un destin différent.
+      </p>
+    </section>
+
+    <!-- Zone des choix / boutons de navigation -->
+    <nav class="choices-container">
+      <a href="pages/scene01.html" class="btn-choice btn-primary">
+        <i class="fa-solid fa-play icon"></i> Entrer dans le donjon
+      </a>
+      <a href="#rules" class="btn-choice btn-secondary" onclick="alert('Règles du jeu :\n1. Lisez attentivement la situation.\n2. Cliquez sur l\'un des choix proposés pour progresser.\n3. Atteignez la meilleure fin possible sans périr !'); return false;">
+        <i class="fa-solid fa-scroll icon"></i> Règle du jeu
+      </a>
+    </nav>
+
+    <footer class="game-footer">
+      <p>Projet TP Web   | Réalisé par Cl</p>
+    </footer>
+  </main>
+
+</body>
+</html>

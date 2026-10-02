@@ -3,53 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>L'Ombre du Donjon - Accueil</title>
+  <title>Operation: Zero-Day - Terminal</title>
 
-  <!-- Font Awesome pour les icônes des boutons -->
+  <!-- Font Awesome pour les icônes tech -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
-  <!-- stylesheet principale -->
+  <!-- Feuille de style principale -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-home">
 
-  
- <!-- Balise audio 100% HTML (sans JavaScript) -->
-<div class="audio-player">
-  <p><i class="fa-solid fa-music"></i> Ambiance sonore :</p>
-  <audio controls loop preload="auto">
-    <source src="assets/sounds/night-ambiance.mp3" type="audio/mpeg">
-    Votre navigateur ne supporte pas l'élément audio.
-  </audio>
-</div>
+  <!-- Son d'ambiance 100% HTML (Bonus sans JS) -->
+  <div class="audio-player">
+    <p><i class="fa-solid fa-signal"></i> Network Ambience :</p>
+    <audio controls loop preload="auto">
+      <source src="assets/sounds/night-ambiance.mp3" type="audio/mpeg">
+      Votre navigateur ne supporte pas l'élément audio.
+    </audio>
+  </div>
 
   <main class="game-container">
     <header class="scene-header">
-      <h1 class="title"><i class="fa-solid fa-dungeon"></i> L'Ombre du Donjon</h1>
-      <p class="subtitle">Un jeu d'aventure dont vous êtes le héros</p>
+      <h1 class="title"><i class="fa-solid fa-terminal"></i> OP: ZERO-DAY</h1>
+      <p class="subtitle">[ROOT ACCESS PENDING...]</p>
     </header>
 
     <section class="scene-body">
       <p class="description">
-        Une brume épaisse recouvre la vallée. Face à vous se dresse l'entrée sombre et menaçante d'une citadelle oubliée. Les légendes racontent qu'un trésor inestimable y est enfoui... tout comme les ossements des aventuriers qui ont osé s'y aventurer.
+        <strong>Avertissement :</strong> Vous êtes connecté à l'interface d'infiltrateur furtif. Votre cible est le serveur central de la mégacorporation <em>Aethelgard Corp</em>.
       </p>
       <p class="description">
-        Prenez vos décisions avec prudence : chaque choix vous mènera vers un destin différent.
+        Votre objectif : contourner l'IDS, exploiter les vulnérabilités du réseau et exfiltrer la base de données sans déclencher l'alerte du SOC. Une seule mauvaise commande peut griller votre IP et verrouiller le système.
       </p>
     </section>
 
-    <!-- Zone des choix / boutons de navigation -->
+    <!-- Choix de navigation -->
     <nav class="choices-container">
       <a href="pages/scene01.html" class="btn-choice btn-primary">
-        <i class="fa-solid fa-play icon"></i> Entrer dans le donjon
+        <i class="fa-solid fa-network-wired icon"></i> Démarrer le scan de port (Nmap)
       </a>
-      <a href="#rules" class="btn-choice btn-secondary" onclick="alert('Règles du jeu :\n1. Lisez attentivement la situation.\n2. Cliquez sur l\'un des choix proposés pour progresser.\n3. Atteignez la meilleure fin possible sans périr !'); return false;">
-        <i class="fa-solid fa-scroll icon"></i> Règle du jeu
+      <a href="#rules" class="btn-choice btn-secondary" onclick="alert('Briefing de mission :\n1. Analysez chaque option attentivement.\n2. Évitez les pièges de sécurité et les honeypots.\n3. Obtenez l\'accès root pour valider la mission.'); return false;">
+        <i class="fa-solid fa-user-shield icon"></i> Mission Briefing
       </a>
     </nav>
 
     <footer class="game-footer">
-      <p>Projet TP Web   | Réalisé par Cl</p>
+      <p>Projet TP Web — | Pentest Sim</p>
     </footer>
   </main>
 

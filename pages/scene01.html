@@ -3,30 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scène 01 - L'Entrée</title>
+  <title>OP: ZERO-DAY - Phase 1</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="../style.css">
 </head>
-<body class="bg-scene01">
+<body>
+
   <main class="game-container">
     <header class="scene-header">
-      <h2>Le Hall d'Entrée</h2>
+      <h1 class="title"><i class="fa-solid fa-server"></i> RECONNAISSANCE</h1>
+      <p class="subtitle">[TARGET: 192.168.1.105]</p>
     </header>
 
     <section class="scene-body">
       <p class="description">
-        Les lourdes portes en bois gémissent sous le vent. Devant vous, deux couloirs s'enfoncent dans l'obscurité. Celui de gauche dégage une odeur de soufre, tandis que celui de droite semble résonner de murmures lointains.
+        Le scan Nmap remonte deux ports ouverts :
+      </p>
+      <p class="description">
+        - <strong>Port 80/tcp</strong> : Serveur Web HTTP (Apache)<br>
+        - <strong>Port 22/tcp</strong> : Service SSH (OpenSSH)
+      </p>
+      <p class="description">
+        Quelle est votre prochaine action ?
       </p>
     </section>
 
     <nav class="choices-container">
       <a href="scene02.html" class="btn-choice">
-        <i class="fa-solid fa-skull icon"></i> Emprunter le couloir de gauche
+        <i class="fa-solid fa-bug icon"></i> Lancer Gobuster sur le serveur Web (Port 80)
       </a>
       <a href="scene03.html" class="btn-choice">
-        <i class="fa-solid fa-scroll icon"></i> Suivre les murmures à droite
+        <i class="fa-solid fa-key icon"></i> Tenter une attaque Brute-Force SSH (Port 22)
       </a>
     </nav>
   </main>
+
 </body>
 </html>

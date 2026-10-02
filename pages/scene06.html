@@ -18,3 +18,25 @@
       <h1 class="title"><i class="fa-solid fa-terminal"></i> SESSION SSH OUVERTE</h1>
       <p class="subtitle">[USER ACCESS: SYSADMIN]</p>
     </header>
+
+    <section class="scene-body">
+      <p class="description">
+        L'attaque par dictionnaire a trouvé un identifiant valide : <code>sysadmin / P@ssword123</code>.
+      </p>
+      <p class="description">
+        Vous êtes connecté en tant qu'utilisateur non privilégié. En vérifiant la configuration des droits <code>sudo -l</code>, vous repérez une binaire mal configurée.
+      </p>
+    </section>
+
+    <nav class="choices-container">
+      <a href="scene10.html" class="btn-choice">
+        <i class="fa-solid fa-shield-halved icon"></i> Exploiter la binaire Sudo (GTFOBins)
+      </a>
+      <a href="scene05.html" class="btn-choice">
+        <i class="fa-solid fa-triangle-exclamation icon"></i> Lancer une commande shell interdite (Déclencher IDS)
+      </a>
+    </nav>
+  </main>
+
+</body>
+</html>

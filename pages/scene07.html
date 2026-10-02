@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OP: ZERO-DAY - Phase 4 (Shell Interactif)</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/x-icon" href="../assets/icons/cyber-security.webp">
+</head>
+<body class="in-pages">
+
+  <main class="game-container">
+    <header class="scene-header">
+      <div class="scene-illustration">
+        <img src="../assets/icons/php.webp" alt="Reverse Shell" class="header-img">
+      </div>
+      <h1 class="title"><i class="fa-solid fa-code icon"></i> REVERSE SHELL</h1>
+      <p class="subtitle">[LISTENER ACTIVE: PORT 4444]</p>
+    </header>
+
+    <section class="scene-body">
+      <p class="description">
+        Le script PHP malveillant a été exécuté. Votre écouteur Netcat reçoit la connexion : <code>Connection received on 192.168.1.105</code>.
+      </p>
+      <p class="description">
+        Vous disposez d'un shell interactif sous l'utilisateur <code>www-data</code>. Il est temps de passer à l'escalade de privilèges.
+      </p>
+    </section>
+
+    <nav class="choices-container">
+      <a href="scene10.html" class="btn-choice">
+        <i class="fa-solid fa-unlock icon"></i> Rechercher un binaire SUID pour devenir Root
+      </a>
+    </nav>
+  </main>
+
+</body>
+</html>
